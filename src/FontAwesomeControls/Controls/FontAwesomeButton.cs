@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace FontAwesomeControls
 {
-    partial class FontAwesomeButton : Button
+    public partial class FontAwesomeButton : Button
     {
         private IconType _IconType = IconType.Solid;
         [Category(Category.FontAwesomeIcon)]

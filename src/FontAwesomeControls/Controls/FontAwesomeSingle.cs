@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace FontAwesomeControls
 {
-    partial class FontAwesomeSingle : Control
+    public partial class FontAwesomeSingle : Control
     {
         private IconType _IconType = IconType.Solid;
         [Category(Category.FontAwesomeIcon)]

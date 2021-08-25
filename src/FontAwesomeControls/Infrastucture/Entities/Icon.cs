@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FontAwesomeControls.Infrastucture.Entities
 {
-    enum IconType
+    public enum IconType
     {
         Solid,
         Brands,

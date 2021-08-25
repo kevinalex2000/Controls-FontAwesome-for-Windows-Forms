@@ -10,8 +10,6 @@ namespace FontAwesomeControls.Data
 {
     class IconData
     {
-        private static readonly string UrlData = "https://kevinalex2000.github.io/FontAwesome-for-Windows-Forms-DATA/v1/icons.min.json";
-        private static string PathToSave = Path.GetTempPath() + "fawf-data.tmp";
         private static IconData _IconData;
 
         private List<Icon> _Icons;
@@ -25,20 +23,7 @@ namespace FontAwesomeControls.Data
         {
             Icons = new List<Icon>();
 
-            string DataString;
-
-            if (File.Exists(PathToSave))
-            {
-                DataString = File.ReadAllText(PathToSave);
-            }
-            else
-            {
-                using (WebClient wc = new())
-                {
-                    DataString = wc.DownloadString(UrlData);
-                    File.WriteAllText(PathToSave, DataString);
-                }
-            }
+            string DataString = System.Text.Encoding.Default.GetString(resource.icons_min);
 
             IconResponse Response = JsonConvert.DeserializeObject<IconResponse>(DataString);
 
