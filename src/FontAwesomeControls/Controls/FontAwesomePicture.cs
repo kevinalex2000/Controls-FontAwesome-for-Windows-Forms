@@ -7,7 +7,7 @@ using FontAwesomeControls.Utils;
 
 namespace FontAwesomeControls
 {
-    partial class FontAwesomePicture : PictureBox
+    public partial class FontAwesomePicture : PictureBox
     {
 
         #region Icon Image

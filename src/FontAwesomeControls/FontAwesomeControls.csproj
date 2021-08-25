@@ -12,7 +12,7 @@
     <RepositoryType>Github</RepositoryType>
     <PackageTags>fontawesome, icon, windows forms</PackageTags>
     <AssemblyName>FontAwesomeControls</AssemblyName>
-    <Version>2.0.0</Version>
+    <Version>2.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,6 +33,18 @@
     <Compile Update="Controls\FontAwesomeSingle.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

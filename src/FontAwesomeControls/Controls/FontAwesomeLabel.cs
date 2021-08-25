@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace FontAwesomeControls
 {
-    partial class FontAwesomeLabel : Label
+    public partial class FontAwesomeLabel : Label
     {
 
         private IconType _IconType = IconType.Solid;
